@@ -1,14 +1,33 @@
 @font-face {
     font-family: "Muller";
-    src: url("fonts/MullerRegular.woff") format('woff');
+    src: url("../fonts/MullerRegular.woff") format('woff');
+    src: url("../fonts/MullerRegular.ttf");
+    font-weight: 400;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/MullerMedium.woff") format('woff');
+    font-weight: 500;
+}
+
+/* @font-face {
+    font-family: "Muller";
+    src: url("../fonts/MullerExtraBold.woff") format('woff');
+    font-weight: bolder;
+} */
+
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/MullerBold.woff") format('woff');
+    font-weight: 700;
 }
 
 
 /* Большой заголовок */
 .main-title {
     font-family: 'Muller';
-    font-style: normal;
     font-weight: 700;
     font-size: 80px;
     line-height: 80px;
@@ -32,9 +51,7 @@
 .title {
     font-family: 'Muller';
     font-weight: 500;
-    /* font-style: bold; */
     font-size: 50px;
-    line-height: 50px;
     text-align: start;
 
     color: #FFFFFF;
@@ -44,7 +61,6 @@
 .description,
 .description-fix {
     font-family: 'Muller';
-    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     text-align: start;

@@ -75,6 +75,7 @@
 
 .info-block__image {
     margin-left: 66px;
+    margin-right: 66px;
 }
 
 .info-block__image,
@@ -83,6 +84,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    justify-content: flex-start;
 }
 
 .info-block__image-info {
@@ -137,9 +139,20 @@
     z-index: -7;
 }
 
-.info-block__image img {
+.info-block__image-poster {
     /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
     width: auto;
+}
+
+@media only screen and (max-width: 578px) {
+    .info-block__image-poster {
+        /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
+        width: 180%;
+    }
+}
+
+.border{
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .detailed__image img {
@@ -241,7 +254,7 @@
     }
 
     .description_size2 {
-        width: 321px;
+        width: 90%;
     }
 
 }
