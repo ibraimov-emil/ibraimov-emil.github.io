@@ -398,6 +398,7 @@ blockquote p {
 	width: 100%;
 	position: relative;
 	z-index: 5;
+	overflow: hidden;
 }
 
 .container {
@@ -1970,7 +1971,7 @@ section {
 	width: 100%;
 	position: relative;
 	padding: 90px 0;
-	overflow-x: visible;
+	overflow: visible;
 	background: #222222;
 }
 
