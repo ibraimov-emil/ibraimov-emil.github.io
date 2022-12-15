@@ -1970,7 +1970,7 @@ section {
 	width: 100%;
 	position: relative;
 	padding: 90px 0;
-	/* overflow: visible; */
+	overflow-x: visible;
 	background: #222222;
 }
 
