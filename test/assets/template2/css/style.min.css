@@ -457,12 +457,24 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 88.62%);
 }
 
+.product-card__img-filter-onsalesoon {
+    z-index: 50;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.78) 88.62%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .product-card__panel {
     position: absolute;
     z-index: 50;
     display: flex;
     align-content: space-around;
     align-items: flex-end;
+}
+
+.product-card__img-filter-onsalesoon-title{
+    margin-left: 40px;
 }
 
 .product-card__info {
