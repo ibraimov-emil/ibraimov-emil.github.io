@@ -1,0 +1,716 @@
+@font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerRegular.woff") format('woff');
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerMedium.woff") format('woff');
+    font-style: medium;
+} */
+
+/* @font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerExtraBold.woff") format('woff');
+    font-style: bolder;
+}
+
+@font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerBold.woff") format('woff');
+    font-style: bold;
+} */
+
+.detailed {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.detailed_button {
+    width: 306px;
+    height: 60px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 22px;
+
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+
+    border: 2px solid #FFFFFF;
+    color: white;
+    background: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #222222;
+    background: #fff;
+}
+
+@media only screen and (max-width: 576px) {
+    .button {
+
+        font-size: 13px;
+    }
+
+    .detailed_button {
+        width: 196px;
+        height: 43px;
+    }
+}
+
+
+.info-block__image {
+    margin-left: 66px;
+}
+
+.info-block__image,
+.detailed__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info-block__image-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.info-block__image-title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.9;
+}
+
+.info-block__image-description {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    color: #FFFFFF;
+    opacity: 0.9;
+    margin-top: 3px;
+    margin-bottom: 15px;
+}
+
+.info-block__image-description2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    width: 241px;
+    margin-bottom: 15px;
+}
+
+.info-block__image-detailed {
+    display: flex;
+}
+
+.info-block__image-detailed-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+    margin-right: 9px;
+}
+
+.detailed__image .filter {
+    width: 41%;
+}
+
+.detailed-prod .filter {
+    height: 46%;
+    width: 70%;
+}
+
+.filter {
+    background: #FFB800;
+    filter: blur(93.1128px);
+    height: 82%;
+    width: 100%;
+    position: absolute;
+    z-index: -7;
+}
+
+.info-block__image img {
+    /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
+    width: auto;
+}
+
+.detailed__image img {
+    width: 597px;
+    margin-right: 107px;
+}
+
+.info-block__description {
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.description_size1 {
+    width: 494px;
+}
+
+.description_size2 {
+    max-width: 526px;
+    width: calc(321px + (526 - 321) * ((100vw - 576px) / (1400 - 576)));
+}
+
+.send-request__form {
+    display: flex;
+}
+
+.send-request__input::placeholder {
+    opacity: 0.3;
+}
+
+.send-request__input {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: inherit;
+    outline: none;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+
+.send-request__input-margin {
+    margin-left: 43px;
+    margin-right: 235px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .send-request__input-margin {
+        margin-right: 146px;
+    }
+}
+
+@media only screen and (max-width: 976px) {
+    .send-request__form {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .send-request__input-margin {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .send-request__input,
+    .send-request__button {
+        width: 275px;
+    }
+}
+
+@media only screen and (max-width: 1060px) {
+    .detailed {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .detailed__image {
+        display: none;
+    }
+
+    .info-block__image {
+        margin-left: 0;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .info-block__description {
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .description_size1 {
+        width: 307px;
+    }
+
+    .description_size2 {
+        width: 321px;
+    }
+
+}
+
+/* .advantages */
+.advantages__line {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+.advantages__advantage {
+    display: flex;
+}
+
+.advantages__advantage_image {
+    margin-right: 20px;
+}
+
+.advantages_advantage__description {
+    width: 435px;
+}
+
+.advantages__advantage_second {
+    margin-left: 115px;
+}
+
+@media only screen and (max-width: 1060px) {
+    .advantages__advantage {
+        margin-bottom: 40px;
+    }
+
+    .advantages__line {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .advantages__advantage_second {
+        margin-left: 0px;
+    }
+
+}
+
+/* search-form */
+.search-form {
+    text-align: start;
+    max-width: 306px;
+}
+
+.search-form__btn2 {
+    display: none;
+}
+
+.search-form__item {}
+
+.search-form__btn {
+    background: none;
+    border: none;
+    padding: 0;
+    margin-right: 12px;
+}
+
+.search-call {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 150px;
+}
+
+.search-form__input {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 110%;
+    /* or 14px */
+    width: 80%;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+.phone-info {
+    margin-right: 82px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+}
+
+/* title fonts style */
+
+.main-title-header {
+    display: flex;
+    align-items: center;
+}
+
+.main-title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    z-index: 50;
+    margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));
+    text-align: start;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-title {
+        margin-left: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    .main-title {
+        margin-left: 15px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+}
+
+.main-titlle-color {
+    color: #FFB800;
+}
+
+.title {
+    font-family: 'Muller';
+    font-weight: 500;
+    /* font-style: bold; */
+    font-size: 50px;
+    line-height: 50px;
+    text-align: start;
+
+    color: #FFFFFF;
+}
+
+.description {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: start;
+    line-height: 110%;
+    /* or 22px */
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+
+
+.sliding-menu a,
+.nav-title span {
+    font-family: 'Muller';
+    font-style: normal;
+}
+
+.menu-button-text,
+.menu-text {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    /* line-height: 110%; */
+}
+
+@media only screen and (max-width: 576px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* product-card */
+
+.product-card__title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    /* identical to box height */
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.product-card__description {
+    width: 200px;
+
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    /* or 18px */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.9;
+}
+
+
+.product-card {
+    max-width: 552px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+.product-slider_slide {
+    display: flex;
+    justify-content: center;
+}
+
+.product-card__img {
+    position: relative;
+    height: 448px;
+    width: 552px;
+}
+
+.detailed-prod__cost {
+    position: absolute;
+    left: 87px;
+}
+
+.product-card__img img {}
+
+.product-card__img-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 88.62%);
+}
+
+.product-card__panel {
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    align-content: space-around;
+    align-items: flex-end;
+}
+
+.product-card__info {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-left: 40px;
+    margin-bottom: 34px;
+    width: 200px;
+}
+
+.product-card__button {
+    font-size: 13px !important;
+    width: 184px;
+    height: 47px;
+    margin-bottom: 34px;
+    margin-left: 98px;
+}
+
+.swiper-arrow-next {
+    cursor: pointer;
+}
+
+.swiper-arrow-prev {
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+.product-card__navbut {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.product-card__navbut_text {
+    margin-left: 100px;
+    margin-right: 100px;
+    ;
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    .product-card__img {
+        width: 96vw;
+    }
+
+    .product-card__navbut_text {
+        margin-left: 50px;
+        margin-right: 50px;
+        ;
+    }
+
+
+    .product-card__button {
+        display: none;
+    }
+
+    .product-slider {
+        margin: auto 10px;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_contact {
+    /* display: flex; */
+    text-align: start;
+
+}
+
+.footer_contact__title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.footer_contact__description {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}
+
+.footer-contact__middle {
+    margin-top: 14px;
+    margin-bottom: 25px;
+    width: 180px;
+}
+
+.footer_contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_copiright_text {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+    width: 200px;
+    text-align: start;
+}
+
+.footer_copiriight_text-wk {
+    width: 138px !important;
+}
+
+.footer-inner .row {
+    display: flex;
+    align-items: end;
+}
+
+@media only screen and (max-width: 1060px) {
+    .footer_contact {
+        margin-bottom: 50px;
+    }
+
+    .footer-inner .row {
+        display: block;
+    }
+
+    .footer_copiright {
+        display: flex;
+    }
+
+    .footer_copiright-middle {
+        margin-bottom: 80px;
+        display: flex;
+    }
+
+    .footer_copiright_text {
+        width: auto !important;
+    }
+
+    .footer_copiriight_text-wk {
+        width: auto !important;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .footer_copiright-middle {
+        margin-bottom: 80px;
+        display: block;
+    }
+
+    .footer_copiright_text {
+        width: 223px;
+    }
+}
+
+.swiper-backface-hidden .swiper-slide {
+    /* width: auto !important; */
+}
+
+/* <div class="footer">
+<div class="footer_contact">
+    <div class="footer_contact__title">
+        Санкт-Петербург:
+    </div>
+    <div class="footer_contact__description">пер. Подъездной, д. 18,литера В, помещ. 200
+    </div>
+    <div class="footer_contact__description">8(812) 380-85-00</div>
+</div>
+</div>
+</div> */
