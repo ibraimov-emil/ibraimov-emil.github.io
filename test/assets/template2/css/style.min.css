@@ -1,8 +1,8 @@
-@font-face {
+/* @font-face {
     font-family: "Muller";
     src: url("fonts/MullerRegular.woff") format('woff');
     font-style: normal;
-}
+} */
 
 /* @font-face {
     font-family: "Muller";
@@ -52,13 +52,8 @@
     align-items: center;
     padding: 12px 22px;
 
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-
     border: 2px solid #FFFFFF;
-    color: white;
+    color: #fff;
     background: none;
     transition: 0.5s;
     cursor: pointer;
@@ -70,10 +65,6 @@
 }
 
 @media only screen and (max-width: 576px) {
-    .button {
-
-        font-size: 13px;
-    }
 
     .detailed_button {
         width: 196px;
@@ -97,40 +88,26 @@
 .info-block__image-info {
     position: absolute;
     left: 0;
-    top: 0;
+    top: -30px;
     display: flex;
     flex-direction: column;
     text-align: start;
 }
 
 .info-block__image-title {
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    color: #FFFFFF;
     opacity: 0.9;
 }
 
 .info-block__image-description {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 110%;
-    color: #FFFFFF;
-    opacity: 0.9;
+    opacity: 0.9 !important;
     margin-top: 3px;
     margin-bottom: 15px;
 }
 
 .info-block__image-description2 {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 16px;
-    color: #FFFFFF;
     opacity: 0.8;
-    width: 241px;
-    margin-bottom: 15px;
+    width: auto;
+    /* margin-bottom: 30px; */
 }
 
 .info-block__image-detailed {
@@ -138,14 +115,6 @@
 }
 
 .info-block__image-detailed-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16px;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
-
     opacity: 0.6;
     margin-right: 9px;
 }
@@ -379,17 +348,7 @@
     align-items: center;
 }
 
-.main-title {
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 80px;
-    line-height: 80px;
-    color: #FFFFFF;
-    z-index: 50;
-    margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));
-    text-align: start;
-}
+
 
 @media only screen and (max-width: 768px) {
     .main-title {
@@ -411,28 +370,6 @@
     color: #FFB800;
 }
 
-.title {
-    font-family: 'Muller';
-    font-weight: 500;
-    /* font-style: bold; */
-    font-size: 50px;
-    line-height: 50px;
-    text-align: start;
-
-    color: #FFFFFF;
-}
-
-.description {
-    font-family: 'Muller';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-align: start;
-    line-height: 110%;
-    /* or 22px */
-    color: #FFFFFF;
-    opacity: 0.8;
-}
 
 
 
@@ -451,15 +388,7 @@
     /* line-height: 110%; */
 }
 
-@media only screen and (max-width: 576px) {
-    .title {
-        font-size: 30px;
-    }
 
-    .description {
-        font-size: 16px;
-    }
-}
 
 /* product-card */
 
@@ -472,10 +401,11 @@
     /* identical to box height */
     margin-bottom: 20px;
     color: #FFFFFF;
+    width: 200px;
 }
 
 .product-card__description {
-    width: 200px;
+    width: auto;
 
     font-family: 'Muller';
     font-style: normal;
@@ -541,7 +471,7 @@
     text-align: start;
     margin-left: 40px;
     margin-bottom: 34px;
-    width: 200px;
+    width: 230px;
 }
 
 .product-card__button {
@@ -549,7 +479,7 @@
     width: 184px;
     height: 47px;
     margin-bottom: 34px;
-    margin-left: 98px;
+    margin-left: 72px;
 }
 
 .swiper-arrow-next {

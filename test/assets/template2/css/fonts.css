@@ -1,0 +1,107 @@
+@font-face {
+    font-family: "Muller";
+    src: url("fonts/MullerRegular.woff") format('woff');
+    font-style: normal;
+}
+
+
+/* Большой заголовок */
+.main-title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    z-index: 50;
+    margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));
+    text-align: start;
+}
+
+/* Большой заголовок моб*/
+@media only screen and (max-width: 576px) {
+    .main-title {
+        margin-left: 15px;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+}
+
+/* Заголовок */
+.title {
+    font-family: 'Muller';
+    font-weight: 500;
+    /* font-style: bold; */
+    font-size: 50px;
+    line-height: 50px;
+    text-align: start;
+
+    color: #FFFFFF;
+}
+
+/* Описание */
+.description,
+.description-fix {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    text-align: start;
+    line-height: 110%;
+    /* or 22px */
+    color: #FFFFFF;
+    opacity: 0.8;
+}
+
+/* Моб заголовок и описание */
+@media only screen and (max-width: 576px) {
+    .title {
+        font-size: 30px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}
+
+/* ПК описание 2+кнопки */
+.button,
+.description2 {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Моб описание 2+кнопки (моб подписи)*/
+@media only screen and (max-width: 576px) {
+
+    .button,
+    .description2 {
+        font-size: 13px;
+    }
+
+}
+
+/* ПК подписи - неизменяемый */
+.signature,
+.signature-fix {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+/* Моб описание2 */
+.mob-description2 {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+
+    color: #FFFFFF;
+}

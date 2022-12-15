@@ -36,6 +36,8 @@ new Swiper('.product-slider', {
             slidesPerView: 2.8,
         }
     },
+
+    slidesPerView: 3,
     navigation: {
         nextEl: ".product-card__navbut .swiper-arrow-next",
         prevEl: ".product-card__navbut .swiper-arrow-prev",
