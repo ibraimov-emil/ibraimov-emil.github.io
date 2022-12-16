@@ -751,7 +751,7 @@ blockquote p {
 }
 
 .nav-scroll-bar-wrap {
-	overflow: hidden;
+	overflow: visible !important;
 	position: unset;
 	left: 0;
 	right: 0;
@@ -776,13 +776,13 @@ blockquote p {
 
 nav.nav-inner {
 	float: left;
-	overflow: hidden;
+	overflow: visible;
 	width: 350px;
 	position: relative;
 }
 
 .nav-container {
-	background: #212121;
+
 	z-index: 20;
 	padding: 20px 0;
 }
@@ -795,6 +795,7 @@ nav.nav-inner {
 }
 
 .sliding-menu li {
+	background: #212121;
 	margin: 0;
 	position: relative;
 	float: left;
@@ -805,10 +806,7 @@ nav.nav-inner {
 	float: left;
 	padding: 0 0 0 20px;
 	height: 40px;
-	line-height: 40px;
 	position: relative;
-	font-weight: 400;
-	font-size: 20px;
 	text-align: left;
 	color: #FFFFFF;
 	/* text-transform: uppercase; */
@@ -7657,7 +7655,12 @@ section {
 	}
 }
 
-@media only screen and (max-width: 564px) {
+@media only screen and (max-width: 578px) {
+
+	.logo_menu{
+		display: none;
+	}
+
 	.fet_pr-carousel-box-media {
 		height: 250px;
 	}

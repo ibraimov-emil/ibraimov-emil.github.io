@@ -111,6 +111,20 @@
     color: #FFFFFF;
 }
 
+
+.mob-description {
+    font-family: 'Muller';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+    /* identical to box height, or 22px */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.8;
+}
+
 /* Моб описание2 */
 .mob-description2 {
     font-family: 'Muller';
