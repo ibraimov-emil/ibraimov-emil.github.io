@@ -33,14 +33,23 @@
     line-height: 80px;
     color: #FFFFFF;
     z-index: 50;
-    margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));
+
     text-align: start;
+}
+
+
+
+.maint-title__mpl {
+    margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));
 }
 
 /* Большой заголовок моб*/
 @media only screen and (max-width: 576px) {
-    .main-title {
+    .maint-title__mpl {
         margin-left: 15px;
+    }
+
+    .main-title__ml {
         font-size: 40px;
         line-height: 40px;
     }

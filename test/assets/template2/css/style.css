@@ -717,10 +717,10 @@ blockquote p {
 	position: absolute;
 	left: 209px;
 	top: 150px;
-	bottom: 180px;
+	/* bottom: 180px; */
 	width: 1px;
 	background: #FFB800;
-	height: 58vh;
+	height: 100%;
 }
 
 .nav-holder-dec,
@@ -752,21 +752,27 @@ blockquote p {
 
 .nav-scroll-bar-wrap {
 	overflow: visible !important;
-	position: unset;
+	position: absolute;
+	height: 100%;
 	left: 0;
 	right: 0;
 	top: 0;
 	bottom: 100px;
 	padding: 46px 40px 0 150px;
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .logo_menu {
-	padding: 15px 0;
-	position: relative;
-	float: left;
-	z-index: 20;
-	background: #212121;
-	margin: 0 0 90px 30px;
+    padding: 15px 0;
+    position: absolute;
+    float: left;
+    top: 0;
+    z-index: 20;
+    background: #212121;
+    top: 6%;
+    margin: 0 0 90px 30px;
 }
 
 .logo_menu img {
@@ -791,7 +797,10 @@ nav.nav-inner {
 	margin: 0;
 	float: left;
 	width: 100%;
-	overflow: hidden;
+	overflow: visible;
+	padding-top: 30px;
+	padding-bottom: 30px;
+    background: #222222;
 }
 
 .sliding-menu li {
@@ -799,7 +808,7 @@ nav.nav-inner {
 	margin: 0;
 	position: relative;
 	float: left;
-	width: 100%;
+	width: 200%;
 }
 
 .sliding-menu a {
@@ -864,11 +873,15 @@ nav.nav-inner {
 }
 
 .nav-title {
-	position: absolute;
-	bottom: 31px;
-	left: 170px;
-	z-index: 2;
-	right: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background: #212121;
+    right: 0;
+    padding-left: 170px;
+    padding-top: 20px;
+    padding-bottom: 31px;
 }
 
 .nav-title span {
@@ -1967,7 +1980,6 @@ nav.nav-inner {
 section {
 	float: left;
 	width: 100%;
-	position: relative;
 	padding: 90px 0;
 	overflow: visible;
 	background: #222222;
@@ -2856,7 +2868,7 @@ section {
 	width: 130%;
 	left: -15%;
 }
-
+ 
 .fet_pr-carousel-box-text a {
 	color: #fff;
 	display: block;
@@ -6827,6 +6839,7 @@ section {
 }
 
 
+
 @media only screen and (max-width: 1200px) {
 	.main-header {
 		width: 100%;
@@ -6936,7 +6949,7 @@ section {
 	}
 
 	.nav-scroll-bar-wrap {
-		padding: 46px 30px 0 30px;
+		padding: 46px 30px 0 0px;
 	}
 
 	.nav-holder,
@@ -6949,16 +6962,16 @@ section {
 	}
 
 	.logo_menu {
-		margin: 0 0 90px 0;
+		margin: 0 0 90px 30px;
 	}
 
 	.nav-title {
-		left: 50px;
+		padding-left: 50px;
 	}
 
 	.nav-holder-line {
 		left: 60px;
-		height: 58vh;
+		height: 100%;
 	}
 
 	.footer-inner {
@@ -7657,6 +7670,10 @@ section {
 
 @media only screen and (max-width: 578px) {
 
+	.nav-scroll-bar-wrap{
+		justify-content: start;
+	}
+
 	.logo_menu{
 		display: none;
 	}
@@ -7725,6 +7742,18 @@ section {
 	.show-fixed-filters {
 		width: 200px;
 	}
+
+	.nav-title {
+		padding-left: 20px !important;
+		border-top: 1px solid #FFB800;
+	}
+	.nav-holder, .nav-holder-dec{
+		width: 100%;
+	}
+	
+	.nav-holder-line{
+		display: none;
+	}
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) {
@@ -7762,3 +7791,4 @@ section {
 .list-custom {
 	text-align: left;
 }
+
