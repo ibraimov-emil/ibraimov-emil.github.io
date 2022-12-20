@@ -463,6 +463,17 @@ blockquote p {
 	z-index: 3;
 }
 
+.overlay1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.8;
+	z-index: 3;
+}
+
 .wf-header {
 	padding-top: 90px;
 }
@@ -6949,7 +6960,7 @@ section {
 	}
 
 	.nav-scroll-bar-wrap {
-		padding: 46px 30px 0 0px;
+		padding: 0px 30px 0 0px;
 	}
 
 	.nav-holder,
