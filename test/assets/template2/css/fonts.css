@@ -144,3 +144,48 @@
 
     color: #FFFFFF;
 }
+
+/* Моб заголовок */
+.mob-title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 576px) {
+
+    .button,
+    .description2 {
+        font-size: 13px;
+    }
+
+    .mob-title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+}
+
+/* ПК под подпись */
+.pc-predesc {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    /* identical to box height */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.9;
+}
