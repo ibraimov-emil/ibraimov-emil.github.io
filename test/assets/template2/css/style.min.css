@@ -139,7 +139,21 @@
     height: 82%;
     width: 100%;
     position: absolute;
+    transform: scale(.90);
+    animation: pulse 3s ease-in-out infinite;
 }
+
+@keyframes pulse {
+    from {
+      transform: scale(.85);
+    }
+    50% {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(.85);
+    }
+  }
 
 .info-block__image-poster {
     /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
@@ -208,7 +222,7 @@
     font-size: 20px;
     line-height: 20px;
     color: #FFFFFF;
-    padding-bottom: 17px;
+    /* padding-bottom: 17px; */
 }
 
 .send-request__input-margin {
@@ -219,6 +233,17 @@
 .partners {
     height: auto;
     /* height: 100vh !important; */
+}
+
+.wrapper-img{
+    
+}
+
+.product-card-realese__img{
+    height: auto;
+    width: 100%;
+    /* еще больше контроля с max-width */
+    max-width: 457px;
 }
 
 @media only screen and (max-width: 1800px) {
@@ -281,6 +306,7 @@
     .send-request__input,
     .send-request__button {
         width: 275px;
+        padding-bottom: 17px
     }
 }
 
@@ -565,6 +591,12 @@
     text-align: center;
 }
 
+.product-card__image{
+    height: auto;
+    width: 100%;
+    /* еще больше контроля с max-width */
+    max-width: 720px;
+}
 
 
 @media only screen and (max-width: 576px) {}
@@ -825,10 +857,6 @@
     padding-right: 35px;
 }
 
-.product-card-realese__img {
-    width: 457px;
-    height: 296.02px;
-}
 
 
 .info-block__image-poster-cont {
@@ -865,6 +893,16 @@
 
 .partners-logocompanies{
     padding: 0 !important;
+}
+
+.main-titlle-desc {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    /* line-height: 50px; */
+    /* identical to box height */
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 1110px) {
@@ -928,9 +966,6 @@
         max-width: 97%;
     }
 
-    .product-card-realese__img {
-        width: 100%;
-    }
 
     .main-slider__current {
         font-size: 30px;
