@@ -1,0 +1,172 @@
+<div class="wrap_main">
+    <div class="wrapp">
+       <aside class="block_h">
+             [[$left_nav]]
+       </aside>
+       <div class="content_container block_h">
+          <article class="content">
+             <h1>[[*pagetitle]]</h1>
+             <div class="card">
+                <div>
+                    [[*parent:is=`265`:then=`
+                       <div>
+                          <a href="[[*gilink]]" title="[[*pagetitle]]" target="_blank">
+                              <img src="[[*image:phpthumbof=`w=440&h=330&zc=1`]]" title="[[*pagetitle]]">
+                          </a>
+                          [[*status:is=`new`:then=`
+                          <div class="good_card_plashka new">Новинка</div>
+                          `:else=``]]
+                          [[*status:is=`access`:then=`
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                          [[*status:is=`sale`:then=`
+                          <div class="good_card_plashka sale">Продано</div>
+                          `:else=``]]
+                          [[*status:is=`newaccess`:then=`
+                          <div class="good_card_plashka new" style="bottom:30px;">Новинка</div>
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                       </div>
+                   `:else=`
+                       <div>
+                          <a href="[[*image]]" rel="prettyPhoto[gallery_good]" title="[[*pagetitle]]">
+                              <img src="[[*image]]" title="[[*pagetitle]]">
+                          </a>
+                          [[*status:is=`new`:then=`
+                          <div class="good_card_plashka new">Новинка</div>
+                          `:else=``]]
+                          [[*status:is=`access`:then=`
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                          [[*status:is=`sale`:then=`
+                          <div class="good_card_plashka sale">Продано</div>
+                          `:else=``]]
+                          [[*status:is=`newaccess`:then=`
+                          <div class="good_card_plashka new" style="bottom:30px;">Новинка</div>
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                       </div>
+                       
+                       [[*ws.images:gt=`0`:then=`
+                         <div class="carousel">
+                             <a href="#" id="prev" class="disabled" style="display: block;"></a>
+                             <a href="#" id="next" class="" style="display: block;"></a>
+                             <div>
+                                 [[getImageList?
+                                     &tvname=`ws.images`
+                                     &tpl=`gallery_item`
+                                 ]]
+                             </div> 
+                         </div>
+                       `]]
+                   `]]
+                   
+                   <a href="[[~43]]" class="tin-tack phone"><small></small><span>Заказать звонок</span></a>
+                   <a href="#" onclick="history.back();return false;" class="tin-tack phone" style="text-align:center;"><span style="margin:0;">Вернуться к списку</span></a>
+                </div>
+                <div>
+                   [[*brand:gt=`0`:then=`<p>Производство: [[*brand]]</p>`]]
+                   [[*model:gt=`0`:then=`<p>Моель: [[*model]]</p>`]]
+                   [[*power:gt=`0`:then=`<p>Мощность: [[*power]] кВА</p>`]]
+                   [[*year:gt=`0`:then=`<p>Год: [[*year]]</p>`]]
+                   [[*desctec:gt=`0`:then=`<p>Описание: [[*desctec]]</p>`]]
+                   [[*condition:gt=`0`:then=`<p>Состояние: [[*condition]]</p>`]]
+                   [[*mileage:gt=`0`:then=`<p>Наработка: [[*mileage:numformat]] моточас</p>`]]
+                   <span class="description"></span>
+                </div>
+             </div>
+             <div class="wysiwyg module">
+                [[*content]]
+             </div>
+       </div>
+       </article>
+       <div class="ridgepole">&nbsp;</div>
+       <div class="clear_footer" style="height: 307px;"></div>
+    </div>
+ </div>
+ </div>
+ </div>
+ 
+ <div class="wrap_main">
+    <div class="wrapp">
+       <aside class="block_h">
+             [[$left_nav]]
+       </aside>
+       <div class="content_container block_h">
+          <article class="content">
+             <h1>[[*pagetitle]]</h1>
+             <div class="card">
+                <div>
+                    [[*parent:is=`265`:then=`
+                       <div>
+                          <a href="[[*gilink]]" title="[[*pagetitle]]" target="_blank">
+                              <img src="[[*image]]" title="[[*pagetitle]]">
+                          </a>
+                          [[*status:is=`new`:then=`
+                          <div class="good_card_plashka new">Новинка</div>
+                          `:else=``]]
+                          [[*status:is=`access`:then=`
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                          [[*status:is=`sale`:then=`
+                          <div class="good_card_plashka sale">Продано</div>
+                          `:else=``]]
+                          [[*status:is=`newaccess`:then=`
+                          <div class="good_card_plashka new" style="bottom:30px;">Новинка</div>
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                       </div>
+                   `:else=`
+                       <div>
+                          <a href="[[*image]]" rel="prettyPhoto[gallery_good]" title="[[*pagetitle]]">
+                              <img src="[[*image]]" title="[[*pagetitle]]">
+                          </a>
+                          [[*status:is=`new`:then=`
+                          <div class="good_card_plashka new">Новинка</div>
+                          `:else=``]]
+                          [[*status:is=`access`:then=`
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                          [[*status:is=`sale`:then=`
+                          <div class="good_card_plashka sale">Продано</div>
+                          `:else=``]]
+                          [[*status:is=`newaccess`:then=`
+                          <div class="good_card_plashka new" style="bottom:30px;">Новинка</div>
+                          <div class="good_card_plashka access">Проверено</div>
+                          `:else=``]]
+                       </div>
+                   `]]
+                   
+                   <a href="[[~43]]" class="tin-tack phone"><small></small><span>Заказать звонок</span></a>
+                   <a href="#" onclick="history.back();return false;" class="tin-tack phone" style="text-align:center;"><span style="margin:0;">Вернуться к списку</span></a>
+                </div>
+                <div>
+                   [[*brand:gt=`0`:then=`<p>Производство: [[*brand]]</p>`]]
+                   [[*model:gt=`0`:then=`<p>Моель: [[*model]]</p>`]]
+                   [[*power:gt=`0`:then=`<p>Мощность: [[*power]] кВА</p>`]]
+                   [[*year:gt=`0`:then=`<p>Год: [[*year]]</p>`]]
+                   [[*desctec:gt=`0`:then=`<p>Описание: [[*desctec]]</p>`]]
+                   [[*condition:gt=`0`:then=`<p>Состояние: [[*condition]]</p>`]]
+                   [[*mileage:gt=`0`:then=`<p>Наработка: [[*mileage]] моточас</p>`]]
+                   <span class="description"></span>
+                </div>
+             </div>
+             <div class="wysiwyg module case_gallery">
+                 [[*ws.images:gt=`0`:then=`
+                     <div class="row">
+                         [[getImageList?
+                             &tvname=`ws.images`
+                             &tpl=`gallery_item_case`
+                         ]]
+                     </div>
+                   `]]
+                [[*content]]
+             </div>
+       </div>
+       </article>
+       <div class="ridgepole">&nbsp;</div>
+       <div class="clear_footer" style="height: 307px;"></div>
+    </div>
+ </div>
+ </div>
+ </div>

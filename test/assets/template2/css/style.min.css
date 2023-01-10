@@ -1,27 +1,48 @@
-/* @font-face {
+@charset "utf-8";
+/*-------------Fonts---------------------------------------*/
+@font-face {
     font-family: "Muller";
-    src: url("fonts/MullerRegular.woff") format('woff');
+    src: url("../fonts/MullerRegular.woff") format('woff');
+    /* src: url("../fonts/MullerRegular.ttf"); */
+    font-weight: 400;
     font-style: normal;
-} */
-
-/* @font-face {
-    font-family: "Muller";
-    src: url("fonts/MullerMedium.woff") format('woff');
-    font-style: medium;
-} */
-
-/* @font-face {
-    font-family: "Muller";
-    src: url("fonts/MullerExtraBold.woff") format('woff');
-    font-style: bolder;
 }
 
 @font-face {
     font-family: "Muller";
-    src: url("fonts/MullerBold.woff") format('woff');
-    font-style: bold;
+    src: url("../fonts/MullerMedium.woff") format('woff');
+    font-weight: 500;
+}
+
+/* @font-face {
+    font-family: "Muller";
+    src: url("../fonts/MullerExtraBold.woff") format('woff');
+    font-weight: bolder;
 } */
 
+@font-face {
+    font-family: "Muller";
+    src: url("../fonts/MullerBold.woff") format('woff');
+    font-weight: 700;
+}
+
+
+/*-------------General Style---------------------------------------*/
+
+* {font-family:'Muller', sans-serif !important; }
+
+
+body {
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	font-size: 12px;
+	height: 100%;
+	text-align: center;
+	color: #000;
+	background: #1F1F1F;
+	/* letter-spacing: 1px; */
+}
 
 
 .detailed {
@@ -97,6 +118,7 @@
     display: flex;
     flex-direction: column;
     text-align: start;
+    z-index: 50;
 }
 
 .info-block__image-title {
@@ -145,15 +167,17 @@
 
 @keyframes pulse {
     from {
-      transform: scale(.85);
+        transform: scale(.85);
     }
+
     50% {
-      transform: scale(1);
+        transform: scale(1);
     }
+
     to {
-      transform: scale(.85);
+        transform: scale(.85);
     }
-  }
+}
 
 .info-block__image-poster {
     /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
@@ -235,20 +259,18 @@
     /* height: 100vh !important; */
 }
 
-.wrapper-img{
-    
-}
+.wrapper-img {}
 
-.product-card-realese__img{
+.product-card-realese__img {
     height: auto;
     width: 100%;
     /* еще больше контроля с max-width */
     max-width: 457px;
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1400px) {
     .info-block__image-poster-mr {
-        margin-left: -142px !important;
+        margin-left: -336px !important;
     }
 
     .info-block__image-poster-mrr {
@@ -262,7 +284,7 @@
     } */
 
     .info-block__image-poster-mrr {
-        margin-left: -380px !important;
+        margin-left: -428px !important;
     }
 }
 
@@ -350,7 +372,8 @@
     margin-left: 115px;
 }
 
-@media only screen and (max-width: 1060px) {
+
+@media only screen and (max-width: 1300px) {
     .advantages__advantage {
         margin-bottom: 40px;
     }
@@ -504,7 +527,7 @@
     position: relative;
 }
 
-.product-card-cat{
+.product-card-cat {
     max-width: 457px !important;
 }
 
@@ -553,7 +576,7 @@
     width: 100%;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
@@ -600,14 +623,14 @@
     text-align: center !important;
 }
 
-.product-card__image{
+.product-card__image {
     height: auto;
     width: 100%;
     /* еще больше контроля с max-width */
     max-width: 720px;
 }
 
-.main-header-arrowdown{
+.main-header-arrowdown {
     position: absolute;
     z-index: 55;
     /* width: 252px; */
@@ -650,7 +673,7 @@
     color: #FFFFFF;
 }
 
-.footer_copiright_text1{
+.footer_copiright_text1 {
     margin-bottom: 30px;
 }
 
@@ -684,7 +707,7 @@
     /* width: 138px !important; */
 }
 
-.footer_copiright-mb{
+.footer_copiright-mb {
     margin-bottom: 28px;
 }
 
@@ -700,6 +723,9 @@
     flex-wrap: wrap;
     justify-content: start;
 }
+
+
+
 
 @media only screen and (max-width: 1060px) {
     .footer_contact {
@@ -895,21 +921,17 @@
     justify-content: space-between;
 }
 
-.partners-logocompanies-line-img {
-    height: 2rem;
-}
-
 .partners-description {
     margin-top: 80px;
     margin-bottom: 70px;
     padding: 0 !important;
 }
 
-.partners-logocompanies-line-img{
+.partners-logocompanies-line-img {
     margin-bottom: 50px;
 }
 
-.partners-logocompanies{
+.partners-logocompanies {
     padding: 0 !important;
 }
 
@@ -923,18 +945,107 @@
     color: #FFFFFF;
 }
 
+/* catalog page */
+.cat_page_panels {
+    z-index: 6;
+    text-align: start;
+}
+
+.main-titlle-desc-cp {
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+
+    color: #FFFFFF;
+
+}
+
+.main-titlle-cp-cost {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height */
+    color: #FFB800;
+    margin-bottom: 75px;
+}
+
+
+/* Характеристики */
+
+.characteristic-title {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.characteristic-card__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.characteristic-line {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.characteristic-border {
+    border-bottom: 1px solid #323232;
+    ;
+}
+
+.title_cp {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.title_cp-2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 110%;
+    /* identical to box height, or 18px */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.9;
+}
+
 @media only screen and (max-width: 1110px) {
     .info-block__image-ar {
         display: none;
     }
 }
 
+@media only screen and (max-width: 1400px) {
+    .main-titlle-desc-cp {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+
+    }
+}
+
 @media only screen and (max-width: 1200px) {
+
+    .main-titlle-desc-cp {
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 50px;
+
+    }
+
     .main-slider__fraction {
         top: 13%
     }
 
-    .partners-logocompanies-line-img{
+    .partners-logocompanies-line-img {
         height: 1.5rem;
     }
 
@@ -947,7 +1058,7 @@
 
 @media only screen and (max-width: 768px) {
 
-    .partners-logocompanies-line-img{
+    .partners-logocompanies-line-img {
         height: 4vw;
     }
 
@@ -972,7 +1083,38 @@
 
 @media only screen and (max-width: 576px) {
 
-    .detailed__block{
+    .title_cp {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .title_cp-2 {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+        /* identical to box height */
+
+
+        color: #FFFFFF;
+
+        opacity: 0.9;
+    }
+
+    .main-titlle-desc-cp {
+        font-size: 40px;
+        line-height: 40px;
+
+    }
+
+    .main-titlle-cp-cost {
+        font-size: 30px;
+        line-height: 30px;
+        /* identical to box height */
+    }
+
+
+    .detailed__block {
         flex-wrap: inherit;
     }
 

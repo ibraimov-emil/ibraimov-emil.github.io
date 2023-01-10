@@ -1,27 +1,3 @@
-@charset "utf-8";
-/*-------------Fonts---------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Nunito+Sans:wght@200;300;400;600;700&display=swap');
-
-/*-------------General Style---------------------------------------*/
-html {
-	overflow-x: hidden !important;
-	overflow-y: scroll !important;
-	height: 100%;
-}
-
-body {
-	margin: 0;
-	padding: 0;
-	font-weight: 400;
-	font-size: 12px;
-	height: 100%;
-	text-align: center;
-	color: #000;
-	background: #1F1F1F;
-	font-family: 'Muller', sans-serif;
-	/* letter-spacing: 1px; */
-}
-
 @-o-viewport {
 	width: device-width;
 }
@@ -7338,6 +7314,8 @@ section {
 	.body-color-bg {
 		display: none;
 	}
+	
+
 
 	.hero-slider_control-wrap {
 		bottom: 20px;
@@ -7680,6 +7658,7 @@ section {
 }
 
 @media only screen and (max-width: 578px) {
+	
 
 	.nav-scroll-bar-wrap{
 		justify-content: start;

@@ -77,6 +77,7 @@
     /* or 22px */
     color: #FFFFFF;
     opacity: 0.8;
+    z-index: 5;
 }
 
 /* Моб заголовок и описание */
@@ -93,10 +94,10 @@
 /* ПК описание 2+кнопки */
 .button,
 .description2 {
-    font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
+    color: #FFFFFF;
 }
 
 /* Моб описание 2+кнопки (моб подписи)*/
@@ -112,23 +113,22 @@
 /* ПК подписи - неизменяемый */
 .signature,
 .signature-fix {
-    font-family: 'Muller';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 110%;
     color: #FFFFFF;
+    margin-top: 6px;
 }
 
 
 .mob-description {
-    font-family: 'Muller';
     font-weight: 400;
     font-size: 20px;
     line-height: 110%;
     /* identical to box height, or 22px */
 
-
+    z-index: 5;
     color: #FFFFFF;
 
     opacity: 0.8;
@@ -136,7 +136,6 @@
 
 /* Моб описание2 */
 .mob-description2 {
-    font-family: 'Muller';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -146,14 +145,14 @@
 }
 
 /* Моб заголовок */
-.mob-title {
-    font-family: 'Muller';
+.mob-title,
+.mob-title-fix {
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 30px;
     /* identical to box height */
-
+    z-index: 5;
 
     color: #FFFFFF;
 
@@ -164,6 +163,9 @@
 
     .button,
     .description2 {
+        font-size: 16px;
+    }
+    .signature{
         font-size: 13px;
     }
 
