@@ -1,4 +1,5 @@
 @charset "utf-8";
+
 /*-------------Fonts---------------------------------------*/
 @font-face {
     font-family: "Muller";
@@ -29,19 +30,21 @@
 
 /*-------------General Style---------------------------------------*/
 
-* {font-family:'Muller', sans-serif !important; }
+* {
+    font-family: 'Muller', sans-serif !important;
+}
 
 
 body {
-	margin: 0;
-	padding: 0;
-	font-weight: 400;
-	font-size: 12px;
-	height: 100%;
-	text-align: center;
-	color: #000;
-	background: #1F1F1F;
-	/* letter-spacing: 1px; */
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 12px;
+    height: 100%;
+    text-align: center;
+    color: #000;
+    background: #1F1F1F;
+    /* letter-spacing: 1px; */
 }
 
 
@@ -120,6 +123,8 @@ body {
     text-align: start;
     z-index: 50;
 }
+
+
 
 .info-block__image-title {
     opacity: 0.9;
@@ -268,6 +273,22 @@ body {
     max-width: 457px;
 }
 
+.c-orange {
+    color: #FFB800 !important;
+}
+
+.rent-mr2 {
+    margin-top: 40px;
+}
+
+.rent-mr {
+    margin: 60px 0;
+}
+
+.reflectionBlock {
+    transform: scale(-1, 1)
+}
+
 @media only screen and (max-width: 1400px) {
     .info-block__image-poster-mr {
         margin-left: -336px !important;
@@ -276,9 +297,13 @@ body {
     .info-block__image-poster-mrr {
         margin-left: -200px !important;
     }
+
+    /* .info-block__image-poster-mrr2 {
+        margin-left: -200px !important;
+    } */
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1600px) {
     /* .info-block__image-poster-mr {
         margin-left: -380px !important;
     } */
@@ -286,11 +311,29 @@ body {
     .info-block__image-poster-mrr {
         margin-left: -428px !important;
     }
+
+    .info-block__image-poster-mrr2 {
+        margin-left: -16% !important;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    /* .info-block__image-poster-mr {
+        margin-left: -380px !important;
+    } */
+    .info-block__image-poster-mrr2 {
+        margin-left: -35% !important;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
     .info-block__image-poster-mr {
         margin-left: 0px !important;
+    }
+
+    .partners-logocompanies-line-imgs {
+        height: 10vw !important;
     }
 
 }
@@ -302,6 +345,10 @@ body {
 
     .detailed__block {
         gap: 0 !important;
+    }
+
+    .rent-mr {
+        margin: 40px 0;
     }
 }
 
@@ -348,7 +395,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 576px) {}
+@media only screen and (max-width: 768px) {}
 
 /* .advantages */
 .advantages__line {
@@ -611,7 +658,8 @@ body {
     transform: rotate(180deg);
 }
 
-.product-card__navbut {
+.product-card__navbut,
+.pagination {
     display: flex;
     justify-content: center;
     margin-top: 90px;
@@ -638,6 +686,20 @@ body {
     bottom: 31px;
     right: 0;
     margin-right: 12px;
+}
+
+.page-active {
+    opacity: 0.3 !important;
+}
+
+.rent-title {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 13px;
+    color: #FFFFFF;
 }
 
 @media only screen and (max-width: 576px) {}
@@ -724,6 +786,21 @@ body {
     justify-content: start;
 }
 
+.detailed__block_dgu {
+    display: flex;
+    gap: 130px;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.info-block__dgu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    justify-content: flex-start;
+}
 
 
 
@@ -1017,6 +1094,32 @@ body {
     opacity: 0.9;
 }
 
+
+.info-block__image-info_dgu {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    z-index: 50;
+}
+
+.detailed-prod__cost_dgu {
+    position: absolute;
+    right: 87px;
+    z-index: 5;
+}
+
+.title_mb {
+    margin-bottom: 85px;
+}
+
+
+.cat_page_panels-marg {
+    margin-top: 100px;
+}
+
 @media only screen and (max-width: 1110px) {
     .info-block__image-ar {
         display: none;
@@ -1041,6 +1144,19 @@ body {
 
     }
 
+    .cat_page_panels-marg {
+        margin-top: 188px !important;
+        margin-bottom: 54px !important;
+    }
+
+    .h-xl-auto {
+        height: auto !important;
+    }
+
+    .title_mb {
+        margin-bottom: 60px;
+    }
+
     .main-slider__fraction {
         top: 13%
     }
@@ -1061,6 +1177,16 @@ body {
     .partners-logocompanies-line-img {
         height: 4vw;
     }
+
+    .title_mb {
+        margin-bottom: 40px;
+    }
+
+    .cat_page_panels-marg {
+        margin-top: 100px !important;
+        margin-bottom: 130px !important;
+    }
+
 
     .info-block__descript-line {
         max-width: 500px;
@@ -1099,6 +1225,10 @@ body {
         color: #FFFFFF;
 
         opacity: 0.9;
+    }
+
+    .info-block__dgu {
+        width: 78%;
     }
 
     .main-titlle-desc-cp {
@@ -1219,15 +1349,3 @@ body {
         width: 223px;
     }
 }
-
-/* <div class="footer">
-<div class="footer_contact">
-    <div class="footer_contact__title">
-        Санкт-Петербург:
-    </div>
-    <div class="footer_contact__description">пер. Подъездной, д. 18,литера В, помещ. 200
-    </div>
-    <div class="footer_contact__description">8(812) 380-85-00</div>
-</div>
-</div>
-</div> */
