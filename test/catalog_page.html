@@ -112,8 +112,45 @@
 
                 <div class="nav-overlay"></div>
                 <div class="hero-wrap h-xl-auto fl-wrap full-height scroll-con-sec" id="sec0">
+                    <div class="custom-model-main">
+                        <div class="custom-model-inner">
+                            <div class="close-btn">×</div>
+                            <div class="custom-model-wrap">
+                                <div class="pop-up-content-wrap">
+                                    <div class="send-request d-flex flex-column justify-content-center align-items-center">
+                                        <h2 class="characteristic-card__title c-black my-5">
+                                            Оформить заказ
+                                        </h2>
+                                        <form class="d-flex flex-column col-md-8 col-11" action="#">
+                                            <input class="popup-req pb-2" placeholder="Имя" type="name" required>
+                                            <input class="popup-req pb-2 mt-4 mb-4" placeholder="Телефон" type="phone" required>
+                                                <label class="mb-3" for="type">Выберите вариант исполнения:</label>
+                                                <select class="pb-2 mb-4 popup-req cursor-pointer" name="type" id="type" value="type" onchange="calculatePrice()">
+                                                    <option value="Открытое">Открытое</option>
+                                                    <option value="Открытое с АВР">Открытое с АВР</option>
+                                                    <option value="В кожухе">В кожухе</option>
+                                                    <option value="В кожухе с АВР">В кожухе с АВР</option>
+                                                    <option value="В контейнере">В контейнере</option>
+                                                    <option value="В контейнере с АВР">В контейнере с АВР</option>
+                                                  </select>
+                                                  
+                                                  <label class="mb-3" for="price">Стоимость:</label>
+                                                  <input class="border-none mb-4" type="text" name="price" id="price" value="" readonly>
+                                                  
+                                                  <input type="hidden" name="product" value="[[*id]]">
+                                                  
+                                                  <button type="submit"
+                                                  class="mb-5 popup-butt">Оформить</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-overlay"></div>
+                    </div>
                     <div class="full-height fl-wrap main-title-header">
-                        <div class="cat_page_panels cat_page_panels-marg d-flex flex-wrap offset-md-2 col-12 container-fluid">
+                        <div
+                            class="cat_page_panels cat_page_panels-marg d-flex flex-wrap offset-md-2 col-12 container-fluid">
                             <div class="cat_page_panel col-xl-5 col-7">
                                 <div class="main-titlle-desc-cp mb-3">
                                     Дизельная электростанция
@@ -127,8 +164,7 @@
                                 <div class="main-titlle-cp-cost">
                                     415 130 руб.
                                 </div>
-                                <a href="#"
-                                    class="main-slider__button button detailed_button d-xl-flex d-none">Заказать</a>
+                                <div class="main-slider__button button detailed_button d-xl-flex popup-order-open d-none">Заказать</div>
                             </div>
                             <div class="cat_page_panel offset-xl-1 col-xl-4 col-12 row">
                                 <div class="cat_page_panel_d d-flex align-items-start mb-5 col-xl-12 col-sm-6 col-12">
@@ -188,8 +224,7 @@
                                 </div>
 
                             </div>
-                            <a href="#"
-                                class="main-slider__button button detailed_button mt-5 d-xl-none mt-3 mb-5">Заказать</a>
+                            <div class="main-slider__button button detailed_button mt-5 d-xl-none popup-order-open mt-3 mb-5">Заказать</div>
                         </div>
                         <img class="d-none" src="" alt="">
                         <div class="bg" data-bg="assets/template2/images/umit-yildirim-3M9ZErOt3Rs.png"
@@ -561,9 +596,12 @@
                                         </form>
                                     </div>
                                 </div>
+                                <div class="Click-here">Click Here</div>
+                                
                             </section>
 
                             <section id="sec7" class="scroll-con-sec">
+
                                 <div class="product-card-realese">
                                     <div class="wrapper-img">
                                         <img class="product-card-realese__img"
@@ -697,6 +735,7 @@
                                     </div>
                                 </div>
                             </section>
+
                         </div>
                         <div class="scroll-fixed-column-content stf-con_mob-hidden fl-wrap">
                             <div class="container-fluid">
@@ -797,6 +836,14 @@
     <script src="assets/template2/js/plugins.js"></script>
     <script src="assets/template2/js/scripts.js"></script>
     <script src="assets/template2/js/wow.min.js"></script>
+    <script>
+        $(".popup-order-open").on('click', function () {
+            $(".custom-model-main").addClass('model-open');
+        });
+        $(".close-btn, .bg-overlay").click(function () {
+            $(".custom-model-main").removeClass('model-open');
+        });
+    </script>
     <script>
         const wow = new WOW({
             boxClass: 'wow',

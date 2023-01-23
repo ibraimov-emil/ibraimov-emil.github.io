@@ -44,7 +44,7 @@
 }
 
 /* Большой заголовок моб*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
     .maint-title__mpl {
         margin-left: 15px;
     }
@@ -81,7 +81,7 @@
 }
 
 /* Моб заголовок и описание */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
     .title {
         font-size: 30px;
     }
@@ -101,7 +101,7 @@
 }
 
 /* Моб описание 2+кнопки (моб подписи)*/
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 
     .button,
     .description2 {
@@ -159,7 +159,7 @@
     opacity: 0.9;
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 768px) {
 
     /* .button,
     .description2 {
