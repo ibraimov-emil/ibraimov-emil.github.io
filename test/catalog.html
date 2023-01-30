@@ -18,6 +18,7 @@
     <link type="text/css" rel="stylesheet" href="assets/template2/css/bootstrap-grid.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
 
 <body>
@@ -129,7 +130,8 @@
 
                             </select>
                         </div>
-                        <img class="d-none" src="assets/template2/images/umit-yildirim-3M9ZErOt3Rs-unsplash22.webp" alt="">
+                        <img class="d-none" src="assets/template2/images/umit-yildirim-3M9ZErOt3Rs-unsplash22.webp"
+                            alt="">
                         <div class="bg" data-bg="assets/template2/images/umit-yildirim-3M9ZErOt3Rs-unsplash22.webp"
                             data-swiper-parallax="20%"></div>
                         <div class="overlay1"></div>
@@ -336,8 +338,8 @@
                                     </div>
                                 </div>
                                 <div class="product-card__navbut">
-                                   <a href=""> <img class="swiper-arrow-prev" src="assets/template2/images/prod-arrow.svg"
-                                        alt="prew"></a>
+                                    <a href=""> <img class="swiper-arrow-prev"
+                                            src="assets/template2/images/prod-arrow.svg" alt="prew"></a>
                                     <div class="product-card__navbut_text description text-center">Дизельные
                                         элекстростанции
                                     </div>
@@ -369,7 +371,107 @@
                                         </form>
                                     </div>
                                 </div>
+
                             </section>
+                            <section id="sec6" class="scroll-con-sec">
+                                <div class="container">
+                                    <table id='adap-table'>
+                                        <thead>
+                                            <tr>
+                                                <th>Устройство</th>
+                                                <th>Цена</th>
+                                                <th>Время</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td data-label="Устройство" class="active">Apple</td>
+                                                <td data-label="Цена">10 000</td>
+                                                <td data-label="Время">2 часа</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Устройство">LG</td>
+                                                <td data-label="Цена">5 000</td>
+                                                <td data-label="Время">1 час</td>
+                                            </tr>
+                                            <tr>
+                                                <td data-label="Устройство">SONY</td>
+                                                <td data-label="Цена">5 000</td>
+                                                <td data-label="Время">1 час</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </section>
+                            <section id="sec2" class="scroll-con-sec">
+                                <div class="container-lg-fluid d-flex justify-content-center">
+                                    <div class="row d-flex col-lg-10 justify-content-center">
+                                        [[!pdoPage?
+                                        &element=`pdoResources`
+                                        &tpl=`catalog_case2`
+                                        &parents=`[[*id]]`
+                                        &limit=`20`
+                                        &includeContent=`1`
+                                        &includeTVs=`image,model,year,brand,maximum_power_kW,maximum_power_kVA`
+                                        &sortby=`menuindex`
+                                        &sortdir=`ASC`
+                                        &tplPage = `@INLINE <a href="[[+href]]">
+                                            <div class="description mx-2">[[+pageNo]] </div>
+                                        </a>`
+                                        &tplPagePrev = `@INLINE <a href="[[+href]]"><img class="swiper-arrow-prev"
+                                                src="assets/template2/images/prod-arrow.svg" alt="prew"></a>`
+                                        &tplPageNext = `@INLINE <a href="[[+href]]"><img class="swiper-arrow-next"
+                                                src="assets/template2/images/prod-arrow.svg" alt="next"></a>`
+                                        &tplPagePrevEmpty = `@INLINE <img class="swiper-arrow-prev"
+                                            src="assets/template2/images/prod-arrow.svg" alt="prew">`
+                                        &tplPageNextEmpty = `@INLINE <img class="swiper-arrow-next"
+                                            src="assets/template2/images/prod-arrow.svg" alt="next">`
+                                        &tplPageSkip = `@INLINE <span>...</span>`
+                                        &tplPageFirst = `@INLINE <a href="[[+href]]">5456s</a>`
+                                        &tplPageActive=`@INLINE <div class="description page-active mx-2">[[+pageNo]]
+                                        </div>`
+                                        &tplPageWrapper=`@INLINE [[+prev]]<div
+                                            class="product-card__navbut_text description text-center d-flex">[[+pages]]
+                                        </div>[[+next]]`
+                                        ]]
+                                    </div>
+
+                                </div>
+                                <div class="product-card__navbut">
+                                    [[!+page.nav]]
+                                </div>
+                            </section>
+
+
+                            <!-- tm2_filterTpl -->
+                <div class="filter_row">
+                    <input type="checkbox" id="[[+name]]__[[+idx]]" name="[[+flt_name]]" value="[[+value]]" />
+                    <label for="[[+name]]__[[+idx]]">[[+value_name]]</label>
+                </div>
+
+
+<label for="[[+name]]__[[+idx]]"><input type="checkbox" id="[[+name]]__[[+idx]]" name="[[+flt_name]]" value="[[+value]]" checked> [[+value_name]]</label>
+
+
+
+<!--<label for="[[+name]]__[[+idx]]"><input type="checkbox" name="brands[]" value="1" checked> [[+value_name]]</label>-->
+
+<!-- tm2_filterOuterTpl -->
+<!--<div class="filter_block">-->
+    <!--<div class="filter_head"><h3>[[+caption]]</h3></div>-->
+    
+<!--    [[+inner]]-->
+
+<!--</div>-->
+
+
+<!--<select class="pb-2 mb-4 popup-req cursor-pointer" name="type" id="type" value="type" onchange="calculatePrice()">-->
+<!--    <option value="Открытое">[[+inner]]</option>-->
+
+<!--</select>-->
+
+
                         </div>
                         <div class="scroll-fixed-column-content stf-con_mob-hidden fl-wrap">
                             <div class="container-fluid">

@@ -1293,12 +1293,12 @@ function initScript() {
 
     function showMenu() {
         nho.fadeIn(500);
-        TweenMax.to(nhd, 1.2, {
+        TweenMax.to(nhd, 0.7, {
             force3D: true,
             left: "0",
             ease: Expo.easeInOut
         });
-        TweenMax.to(nhw, 1.2, {
+        TweenMax.to(nhw, 0.7, {
             force3D: true,
             left: "0",
             delay: 0.2,

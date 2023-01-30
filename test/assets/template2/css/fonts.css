@@ -103,9 +103,12 @@
 /* Моб описание 2+кнопки (моб подписи)*/
 @media only screen and (max-width: 768px) {
 
-    .button,
-    .description2 {
+    .button{
         font-size: 13px;
+    }
+
+    .description2{
+        font-size: 17px;
     }
 
 }
@@ -166,7 +169,7 @@
         font-size: 16px;
     } */
     .signature{
-        font-size: 13px;
+        font-size: 17px;
     }
 
     .mob-title {
