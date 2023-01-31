@@ -48,6 +48,29 @@ if ($(".product-slider").length > 0) {
     });
 }
 
+if ($(".realese-slider").length > 0) {
+    new Swiper('.realese-slider', {
+        // Width: 552,
+        loop: true,
+        centeredSlides: true,
+        grabCursor: true,
+        spaceBetween: 0,
+        breakpoints: {
+            // when window width is >= 320px
+
+            0: {
+                slidesPerView: 1,
+            },
+        },
+
+        slidesPerView: 3,
+        navigation: {
+            nextEl: ".product-card__navbut .swiper-arrow-next",
+            prevEl: ".product-card__navbut .swiper-arrow-prev",
+        },
+    });
+}
+
 
 if ($(".main-sliderr").length > 0) {
 

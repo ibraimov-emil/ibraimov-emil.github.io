@@ -2,11 +2,10 @@
     font-family: "Muller";
     src: url("../fonts/MullerRegular.woff") format('woff');
     src: url("../fonts/MullerRegular.ttf");
-    font-weight: 400;
     font-style: normal;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Muller";
     src: url("../fonts/MullerMedium.woff") format('woff');
     font-weight: 500;
@@ -22,11 +21,11 @@
     font-family: "Muller";
     src: url("../fonts/MullerBold.woff") format('woff');
     font-weight: 700;
-}
+} */
 
 
 /* Большой заголовок */
-.main-title {
+.main-title{
     font-family: 'Muller';
     font-weight: 700;
     font-size: 80px;
@@ -37,7 +36,36 @@
     text-align: start;
 }
 
+.maintitle{
+    font-family: 'Muller';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 80px;
+    color: #FFFFFF;
+    z-index: 50;
 
+    text-align: start;
+}
+
+.text-20px{
+    font-family: 'Muller';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 110%;
+}
+.text-24px{
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    color:#fff;
+}
+
+.card-uslugi-mtl{
+    margin-top: 43px;
+    margin-left: 40px;
+}
 
 .maint-title__mpl {
     margin-left: calc(158px + (272 - 158) * ((100vw - 768px) / (1400 - 768)));

@@ -5,11 +5,11 @@
     font-family: "Muller";
     src: url("../fonts/MullerRegular.woff") format('woff');
     /* src: url("../fonts/MullerRegular.ttf"); */
-    font-weight: 400;
-    font-style: normal;
+    /* font-weight: 400; */
+    font-style: normal;z-index: 5;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Muller";
     src: url("../fonts/MullerMedium.woff") format('woff');
     font-weight: 500;
@@ -21,11 +21,11 @@
     font-weight: bolder;
 } */
 
-@font-face {
+/* @font-face {
     font-family: "Muller";
     src: url("../fonts/MullerBold.woff") format('woff');
     font-weight: 700;
-}
+} */
 
 
 /*-------------General Style---------------------------------------*/
@@ -183,6 +183,13 @@ body {
         transform: scale(.85);
     }
 }
+.z-index-5{
+    z-index: 5;
+}
+
+.z-index-50{
+    z-index: 50;
+}
 
 .info-block__image-poster {
     /* width: calc(624px + (1251 - 624) * ((100vw - 576px) / (1400 - 576))); */
@@ -267,10 +274,10 @@ body {
 .wrapper-img {}
 
 .product-card-realese__img {
-    height: auto;
+    min-height: 341px;
     width: 100%;
     /* еще больше контроля с max-width */
-    max-width: 457px;
+    max-width: 457px !important;
 }
 
 .c-orange {
@@ -350,6 +357,7 @@ body {
     .rent-mr {
         margin: 40px 0;
     }
+
 }
 
 
@@ -576,6 +584,10 @@ body {
 
 .product-card-cat {
     max-width: 457px !important;
+}
+
+.card-video {
+    max-width: 300px !important;
 }
 
 .product-slider_slide {
@@ -967,7 +979,8 @@ body {
 }
 
 .product-card-realese {
-    max-width: 457px;
+    height: auto;
+    max-width: 457px !important;
     border: 1.41921px solid #323232;
 }
 
@@ -1052,10 +1065,11 @@ body {
 .characteristic-title {
     font-weight: 500;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .characteristic-card__title {
+    text-align: start;
     font-weight: 500;
     font-size: 30px;
     line-height: 30px;
@@ -1063,8 +1077,9 @@ body {
 }
 
 .characteristic-line {
+    text-align: start;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 18px;
     line-height: 13px;
     color: #FFFFFF;
 }
@@ -1149,7 +1164,8 @@ body {
     transition:background-image 3s ease-in-out;
     background-image: linear-gradient(90deg, #fee140 0%, #f83600 100%);
   }
-  .custom-model-main {
+  .custom-model-main,
+  .custom-call-main{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1256,12 +1272,24 @@ body {
         margin-right: -0px;
         height: 100%;
       }
+      .custom-call-main:before {
+        content: "";
+        display: inline-block;
+        height: auto;
+        vertical-align: middle;
+        margin-right: -0px;
+        height: 100%;
+      }
   }
   @media screen and (max-width:799px){
     .custom-model-inner{margin-top: 45px;}
   }
   
   .popup-butt{
+    height: 57px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1304,6 +1332,31 @@ body {
 
   .border-none{
     border: none;
+    background: none;
+  }
+  
+  .mt-6{
+      margin-top: 100px;
+  }
+  
+  #filters{
+      z-index: 50;
+  }
+  
+  .filter-top{
+    margin-top: 100px !important;
+  }
+
+  .top-0{
+    top: 0;
+  }
+
+  .border-bottom-orange{
+    border-bottom: 2px solid #FFB800;
+  }
+
+  .op-06{
+    opacity: 0.6 !important;
   }
 
 
@@ -1319,6 +1372,12 @@ body {
         font-size: 50px;
         line-height: 50px;
 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .h-x-auto {
+        height: auto !important;
     }
 }
 
@@ -1368,6 +1427,8 @@ body {
     .title_mb {
         margin-bottom: 40px;
     }
+    
+
 
     .cat_page_panels-marg {
         margin-top: 100px !important;
@@ -1394,13 +1455,17 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
 
     .title_cp {
         font-weight: 500;
         font-size: 16px;
         line-height: 16px;
     }
+    
+    .filter-top{
+        margin-top: 56px !important;
+     }
 
     .title_cp-2 {
         font-weight: 400;
@@ -1550,7 +1615,7 @@ body {
     border: 1px solid #ddd;
     padding: 5px;
   }
-
+  
   #adap-table tbody {
     color: #fff;
     opacity: 0.8;
@@ -1571,7 +1636,7 @@ body {
   
   @media screen and (max-width: 767px) {
 	#adap-table tbody tr td:first-child{
-	  background-color:#ccc;
+	  /* background-color:#ccc; */
     }
 	#adap-table tbody tr td{
 	  display:block;
@@ -1620,3 +1685,136 @@ body {
 	  display:table-cell!important;
 	}
   }
+  
+  
+.checkselect {
+	position: relative;
+	display: inline-block;
+	min-width: 200px;
+	text-align: left;
+    height: fit-content;
+}
+.checkselect-control {
+	position: relative;
+	padding: 0 !important;
+}		
+.checkselect-control select,
+.send-request__input2{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    height: 30px;
+    background: none;
+    color: #fff;
+    border: none;
+    border-bottom: 3px solid;
+    height: 45px;
+    padding-right: 10px;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    padding-right: 60px;
+}
+
+.send-request__input2{
+    max-width: 200px;
+}
+
+.checkselect-control select:active{
+        background: #fff;
+}
+
+.checkselect-over {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0; 			
+	cursor: pointer;
+}
+.checkselect-popup {
+	display: none;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: auto;
+	max-height: 200px;
+	position: absolute;
+	top: 100%;
+	left: 0px; 
+	border: 1px solid #dadada;
+	border-top: none;
+	background: #fff;
+	z-index: 9999;
+	overflow: auto;
+	user-select: none;
+}	
+.checkselect label {
+	position: relative;
+	display: block;
+	margin: 0;
+	padding: 4px 6px 4px 25px;
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.1;
+	cursor: pointer;
+}			
+.checkselect-popup input {
+	position: absolute;
+	top: 5px; 
+	left: 8px;
+	margin: 0 !important;
+	padding: 0;
+}
+.checkselect-popup label:hover {
+	background: #03a2ff;
+	color: #fff;
+}
+.checkselect-popup fieldset {
+	display: block;
+	margin:  0;
+	padding: 0;
+	border: none;
+}
+.checkselect-popup fieldset input {
+	left: 15px;
+}		
+.checkselect-popup fieldset label {
+	padding-left: 32px;
+}		
+.checkselect-popup legend {
+	display: block;
+	margin: 0;
+	padding: 5px 8px;
+	font-weight: 700;
+	font-size: 1em;
+	line-height: 1.1;
+}
+
+
+
+
+.call-order{
+    height: 50px;
+    width: 220px;
+    font-size: 16px !important;
+}
+
+.slick-prev {
+    left: 20px;
+    z-index: 500;
+}
+
+.slick-prev {
+    left: 20px!important;
+    z-index: 500!important;
+}
+
+.slick-next {
+    right: 20px !important;
+}
