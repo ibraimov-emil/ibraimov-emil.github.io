@@ -1,0 +1,167 @@
+.midle-bank timer {
+    display: flex;
+    justify-content: center;
+    font-family: "museoSans";
+    color: #A1A1A1;
+    margin-top: 1vh;
+    font-weight: 500;
+    font-size: 2vh;
+}
+
+.midle-bank h1 {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .device {
+        display: none;
+    }
+
+    .block {
+        display: block;
+        height: 100vh;
+    }
+
+    .phone {
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .desctop {
+        height: 100vh;
+        background-color: #F5F5F5;
+        width: 100vw;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+        height: 100vh
+    }
+
+    #come {
+        margin-top: 5vh;
+    }
+
+    #t {
+        display: none;
+    }
+
+    .navigate {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        display: none;
+    }
+
+    #logo {
+        margin-right: 0%;
+    }
+
+    .avatar {
+        display: flex;
+        justify-content: center;
+        margin-top: 5vh;
+    }
+
+    .ava {
+        width: 16vh;
+        height: auto;
+    }
+
+    .info {
+        font-family: "museoSans";
+        font-weight: 700;
+        line-height: 5.5vh;
+        color: white;
+        margin-left: 3vh;
+        font-size: 3vw;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    #btnDev {
+        width: 221px;
+        height: 6vh;
+        border-radius: 1vh;
+        margin-top: 2vh;
+        margin: 2vh auto 0px auto;
+        background: #FF8D24;
+        font-family: Roboto;
+        font-size: 3vh;
+        color: #FFFFFF;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+    }
+
+    .infoFAQ {
+        display: flex;
+        justify-content: center;
+        margin-top: 14vh;
+        margin-bottom: 14vh;
+        font-family: "museoSansBold";
+        font-size: 7vh;
+        color: black;
+    }
+
+    .footerInfoBlock {
+        width: 27vw;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .info {
+        font-size: 3vh;
+    }
+
+    .ava {
+        width: 20vh;
+        height: auto;
+    }
+
+    .footerInfoBlock {
+        width: 27vw;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+
+    .footerInfo {
+        flex-direction: column;
+        justify-content: center;
+        bottom: 8vh;
+    }
+
+    .footerInfoBlock {
+        width: 27vw;
+        width: 64vw;
+        margin-left: 3vh;
+    }
+
+    .footerInfo #midle {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        margin-right: 0;
+        margin-left: 3vh;
+    }
+
+    .date {
+        bottom: -7vh;
+    }
+
+}

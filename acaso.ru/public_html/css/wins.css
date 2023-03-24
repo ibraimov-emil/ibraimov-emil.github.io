@@ -1,0 +1,148 @@
+#wins-phone {
+    display: none;
+}
+
+.lastwins {
+    width: 49vh;
+    height: 30vh;
+    background: white;
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 5;
+    text-align: center;
+    border-radius: 0 0 1vh 1vh;
+}
+
+.root {
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    background-color: white;
+    justify-content: center;
+    bottom: 31vh;
+}
+
+.lastwins .glav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 2.2vh;
+    margin-bottom: 1.5vh;
+}
+
+.lastwins .glav .photo img {
+    height: 6vh;
+    border-radius: 100%;
+    margin-right: 2vh;
+}
+
+.lastwins .glav .contact img {
+    height: auto;
+    width: 6vh;
+}
+
+
+
+.lastwins .num {
+    width: 5vh;
+}
+
+.lastwins .name {
+    font-weight: bold;
+}
+
+
+.lastwins a {
+    position: absolute;
+    right: 5vh;
+    margin-bottom: 1vh;
+}
+
+.label {
+    position: absolute;
+    bottom: 31vh;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.label-name {
+    width: 49vh;
+    height: 6vh;
+    background: white;
+    border-radius: 1vh 1vh 0 0;
+}
+
+.load-background {
+    width: 49vh;
+    height: 30vh;
+    background: white;
+    position: absolute;
+    z-index: 500;
+    text-align: center;
+}
+
+.label h4 {
+    margin-left: 2vh;
+    margin-top: 1.5vh;
+    font-size: 2vh;
+}
+
+.headerPanel {
+    margin-top: 2vh;
+}
+
+@media only screen and (max-width: 1024px) {
+    .root {
+        display: none;
+        top: 11vh;
+    }
+
+    .lastwins {
+        width: 100vw;
+        height: 95vh;
+    }
+
+    .label {
+        top: 0;
+        display: none;
+    }
+
+    .label-name {
+        width: 100vw;
+        z-index: 5;
+        display: flex;
+        justify-content: center;
+        height: 11vh;
+    }
+
+
+    .label .back-wins {
+        position: absolute;
+        height: 5vh;
+        left: 2vh;
+    }
+
+    .button-wins {
+        position: absolute;
+        bottom: 14vh;
+        width: 100vw;
+    }
+
+    .button-wins img {
+        height: 10vh;
+    }
+
+    .button-wins h4 {
+        font-family: MuseoSans;
+        font-size: 3vh;
+    }
+
+}
+
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 479px) {}

@@ -1,4 +1,33 @@
+
+
 if ($(".product-slider").length > 0) {
+    new Swiper('.product-slider', {
+
+        spaceBetween: 30,
+        breakpoints: {
+            // when window width is >= 320px
+            3: {
+                slidesPerView: 1,
+                spaceBetween: 10
+            },
+            // when window width is >= 480px
+            1200: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            2700: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
+        },
+        navigation: {
+            nextEl: ".product-card__navbut .swiper-arrow-next",
+            prevEl: ".product-card__navbut .swiper-arrow-prev",
+        },
+    });
+}
+
+if ($(".product-slider2").length > 0) {
     new Swiper('.product-slider', {
         Width: 552,
         loop: true,

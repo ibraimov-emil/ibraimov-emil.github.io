@@ -1,0 +1,106 @@
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+
+body {
+	margin: 0
+}
+
+.panel {
+	text-align: center;
+	padding-top: 0.1px;
+	min-height: 100%;
+}
+
+/**
+ * hamburger
+ */
+.btn-hamburger {
+	border: none;
+	position: absolute;
+	top: -3vh;
+	left: 12px;
+	outline: none;
+	background: #F5F5F5;
+	z-index: 5;
+	cursor: pointer;
+	font-family: "museoSans";
+	font-size: 14vh;
+}
+
+/**
+ * Boxes
+ */
+.box {
+	border: 1px solid #4b5;
+	border-radius: 4px;
+	text-align: left;
+	margin: 50px 10px;
+	position: relative;
+}
+
+.box:before,
+.box:after {
+	content: ' ';
+	display: inline-block;
+	width: 1px;
+	height: 50px;
+	border-left: 1px solid #4b5;
+	position: absolute;
+	left: 50%;
+}
+
+.box:before {
+	top: -50px;
+}
+
+.box:after {
+	bottom: -50px;
+}
+
+.box-title {
+	margin: 0;
+	padding: 10px 20px;
+	border-bottom: 1px solid #4b5;
+	color: #4b5;
+	font-size: 1.2em;
+	font-weight: 400;
+}
+
+.box-content {
+	padding: 20px;
+	background-color: #f8f8f8;
+}
+
+/**
+ * Medium Screens
+ */
+@media all and (min-width:40em) {
+
+	.btn-hamburger {
+		top: 20px;
+		left: 30px;
+	}
+
+	.panel-header {
+		width: 455px;
+	}
+
+	.title {
+		font-size: 4.2em;
+	}
+}
+
+/**
+ * Large Screens
+ */
+@media all and (min-width: 54em) {
+	.box {
+		width: 70%;
+		max-width: 1200px;
+		margin: 50px auto;
+	}
+}

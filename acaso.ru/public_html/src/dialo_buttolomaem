@@ -1,0 +1,37 @@
+'use strict';
+document.querySelectorAll('#dialogButton')
+  .forEach(domContainer => {
+class LikeButton extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { liked: false };
+  }
+
+  render() {
+    if (this.state.liked) {
+		if(commentID == 1){
+      return (<div id="text" className="about">- Тогда, поехали!</div>);}else{
+		  if(commentID == 2){
+			   return (<div id="text" className="about">- Дальше лучше!</div>);}else{
+		  if(commentID == 3){
+			   return (<div id="text" className="about">- Узнай о преимуществах!</div>);}else{
+		  if(commentID == 4){
+				    return (<div id="text" className="about">- Регистрируйся скорее!</div>);
+			}		   
+		  }		   
+		}
+	  }
+    }
+
+    return (
+	  
+      <button onClick={() => this.setState({ liked: true }) }>
+        Да
+      </button>
+
+    );
+  }
+}
+const commentID = parseInt(domContainer.dataset.commentid, 10);
+ReactDOM.render(<LikeButton />, domContainer);
+}); 

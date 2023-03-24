@@ -17,12 +17,22 @@
     font-weight: bolder;
 } */
 
-@font-face {
+/* @font-face {
     font-family: "Muller";
     src: url("../fonts/MullerBold.woff") format('woff');
     font-weight: 700;
 } */
 
+
+/* .product-slider {
+    width: 100%;
+    margin: 0 auto;
+}
+.swiper-slide {
+    width: calc(100% / 3 - 20px);
+    margin: 10px;
+    text-align: center;
+} */
 
 /* Большой заголовок */
 .main-title{
